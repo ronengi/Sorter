@@ -20,7 +20,8 @@ public class Client {
         //Insertion.sort(files);
         //Shell.sort(files);
         //Merge.sort(files);
-        MergeBU.sort(files);
+        //MergeBU.sort(files);
+        Quick.sort(files);
 
 
         System.out.println();
