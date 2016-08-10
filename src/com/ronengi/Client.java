@@ -16,6 +16,9 @@ public class Client {
         for(int i = 0; i < files.length; ++i)
             System.out.println(files[i].getName());
 
+        System.out.println();
+        System.out.println(((File) (Quick.select(files, 12))).getName());
+
         //Selection.sort(files);
         //Insertion.sort(files);
         //Shell.sort(files);
