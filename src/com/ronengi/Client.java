@@ -1,6 +1,7 @@
 package com.ronengi;
 
 import java.io.File;
+import java.util.Arrays;
 
 /**
  * Created by stimpy on 8/3/16.
@@ -9,27 +10,27 @@ public class Client {
 
     public static void main(String[] args) {
 
-        File directory = new File("/proc/1/");
-        File[] files = directory.listFiles();
+        String str = "justwhatdoyouthinkyouredoingdave";
+        String[] a = str.split("");
 
         System.out.println();
-        for(int i = 0; i < files.length; ++i)
-            System.out.println(files[i].getName());
+        System.out.println(Arrays.deepToString(a));
+
+        //int j = 13;
+        //System.out.println();
+        //System.out.println("The " + (j+1) + "th biggest item is: " + Quick.select(a, j));
+
+
+        //Selection.sort(a);
+        //Insertion.sort(a);
+        //Shell.sort(a);
+        //Merge.sort(a);
+        //MergeBU.sort(a);
+        //Quick.sort(a);
+        Dijkstra3Way.sort(a);
 
         System.out.println();
-        System.out.println(((File) (Quick.select(files, 12))).getName());
-
-        //Selection.sort(files);
-        //Insertion.sort(files);
-        //Shell.sort(files);
-        //Merge.sort(files);
-        //MergeBU.sort(files);
-        Quick.sort(files);
-
-
-        System.out.println();
-        for(int i = 0; i < files.length; ++i)
-            System.out.println(files[i].getName());
+        System.out.println(Arrays.deepToString(a));
 
     }
 

@@ -12,15 +12,6 @@ public class Quick {
     }
 
 
-    public static void sort(Comparable[] a, int lo, int hi) {
-        if (hi <= lo)
-            return;
-        int j = partition(a, lo, hi);
-        sort(a, lo, j - 1);
-        sort(a, j + 1, hi);
-    }
-
-
     public static Comparable select(Comparable[] a, int k) {
         Knuth.shuffle(a);
         int lo = 0, hi = a.length - 1;
@@ -34,7 +25,16 @@ public class Quick {
     }
 
 
-    public static int partition(Comparable[] a, int lo, int hi) {
+    private static void sort(Comparable[] a, int lo, int hi) {
+        if (hi <= lo)
+            return;
+        int j = partition(a, lo, hi);
+        sort(a, lo, j - 1);
+        sort(a, j + 1, hi);
+    }
+
+
+    private static int partition(Comparable[] a, int lo, int hi) {
         int i = lo;
         int j = hi + 1;
         while (i < j) {
