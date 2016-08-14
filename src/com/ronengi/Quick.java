@@ -2,6 +2,9 @@ package com.ronengi;
 
 /**
  * Created by stimpy on 8/9/16.
+ * Hoare's quick sort.
+ * Partitioning stops at equal keys, to make sure performance don't degrades to n-square.
+ *
  */
 public class Quick {
 

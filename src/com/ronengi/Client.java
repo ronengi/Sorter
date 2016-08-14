@@ -1,6 +1,5 @@
 package com.ronengi;
 
-import java.io.File;
 import java.util.Arrays;
 
 /**
@@ -27,7 +26,9 @@ public class Client {
         //Merge.sort(a);
         //MergeBU.sort(a);
         //Quick.sort(a);
-        Dijkstra3Way.sort(a);
+        //Dijkstra3Way.sort(a);
+        Heap.sort(a);
+
 
         System.out.println();
         System.out.println(Arrays.deepToString(a));
